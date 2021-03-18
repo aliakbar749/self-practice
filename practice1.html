@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mini calculator</h1>
+    <p >First number<input type="text" id="first"></p>
+    <p >second number<input type="text" id="second"></p>
+    <input type="button" id="1stbtn"value="Multiply">
+    <input type="button" id="2ndbtn" value="Divide">
+    <p id="result"></p>
+
+
+
+    <script>
+        var first=document.getElementById("1stbtn").addEventListener("click", function(){
+            var firstNumber= document.getElementById("first").value;
+            var secondNumber= document.getElementById("second").value;
+            var result=  firstNumber * secondNumber;
+            document.getElementById("result").innerHTML=result;
+
+
+        });
+        var first=document.getElementById("2ndbtn").addEventListener("click", function(){
+            var firstNumber= document.getElementById("first").value;
+            var secondNumber= document.getElementById("second").value;
+            var result=  firstNumber / secondNumber;
+            
+            document.getElementById("result").innerHTML=finalResult;
+
+
+        });
+
+    </script>
+</body>
+</html>
